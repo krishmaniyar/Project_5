@@ -4,6 +4,7 @@ var input3 = "";
 
 var textbox = document.getElementById('textbox');
 var answer ="";
+var answer1 ="";
 
 function operate()
 {
@@ -31,6 +32,7 @@ function operate()
     {
         answer = "NaN";
     }
+    answer1 = textbox.value;
     textbox.value = answer;
     input1="";
     input2="";
@@ -84,8 +86,21 @@ function values(num)
 
 function operators(opp)
 {
-    input2=opp;
     console.log("operator: "+ opp)
+    if(input2!="")
+    {
+        operate();
+        textbox.value = answer1;
+    }
+    if(input1=="")
+    {
+        input1=answer;
+    }
+    input2=opp;
+    if(opp=="*")
+        opp="x";
+    if(opp=="/")
+        opp="÷"
     textbox.value += opp;
 }
 
