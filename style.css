@@ -8,42 +8,35 @@ body
 {
     margin: 0%;
     padding: 0%;
-    width: 100%;
-    height: 80px;
-    background-color: aqua;
+    background-color: cadetblue;
     text-align: center;
-    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
-#container
+.calculator
 {
-    display: flex;
-    flex-direction: column;
-    align-items:stretch;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0%;
-}
-
-.grid-item
-{
-    height: 30px;
-    width:30px;
-    border: 1px solid;
+    align-content: center;
     text-align: center;
-    font-size: 10px;
     align-items: center;
-    justify-content: center;    
-    background-color: white;
-    display:inline-flex;
+    justify-items: center;
+    justify-content: center;
+    height: 400px;
 }
 
 button
 {
     padding: 0%;
+    border: 1px solid black;
+    margin: 0%;
     height: 30px;
     width: 30px;
-    align-items: center;
+}
+
+.screen
+{
+    align-content: center;
+    text-align: center;
+    font-size: 22px;
+    padding: 3px;
 }

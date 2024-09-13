@@ -2,18 +2,46 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
-        <title>calculator</title>
+        <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="header">
+        <div class = "header">
             <h1>Calculator</h1>
         </div>
-        <div id="screen" style="align-items: center;">
-            <input type="text" name="textbox" id="textbox" style="height: 30px;width: 124px;font-size: 30px;left: 44.6%;position:sticky;text-align: end;">        
-        </div>
-        <div id="container">
-
+        <div class="calculator">
+            <div class="screen">
+                <input type="text" name="textbox" id="textbox" style="height: 30px;width: 124px;font-size: 30px;left: 44.6%;position:sticky;text-align: end;">
+            </div>
+            <div class="row">
+                <button onclick="clear1()" style="width: 64px;"">AC</button>
+                <button onclick="operators('%')">%</button>
+                <button onclick="delete1()">Del</button>
+            </div>
+            <div class="row1">
+                <button onclick="values(7)">7</button>
+                <button onclick="values(8)">8</button>
+                <button onclick="values(9)">9</button>
+                <button onclick="operators('/')">÷</button>
+            </div>
+            <div class="row2">
+                <button onclick="values(4)">4</button>
+                <button onclick="values(5)">5</button>
+                <button onclick="values(6)">6</button>
+                <button onclick="operators('*')">x</button>
+            </div>
+            <div class="row2">
+                <button onclick="values(1)">1</button>
+                <button onclick="values(2)">2</button>
+                <button onclick="values(3)">3</button>
+                <button onclick="operators('-')">-</button>
+            </div>
+            <div class="row3">
+                <button>0</button>
+                <button onclick="values('.')">.</button>
+                <button onclick="operate()">=</button>
+                <button onclick="operators('+')">+</button>
+            </div>
         </div>
         <script src="javascript.js"></script>
     </body>
