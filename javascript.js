@@ -8,6 +8,7 @@ var answer1 ="";
 
 function operate()
 {
+    console.log(input1 + input2 + input3);
     if(input2 == "+")
     {
         answer = addition(input1,input3);
@@ -49,18 +50,27 @@ function clear1()
 
 function delete1()
 {
-    textbox.value = textbox.value.slice(0,-1);
-    if(input3!="")
+    if(textbox.value!="")
     {
-        input3 = input3.slice(0,-1);
-    }
-    else if(input2!="")
-    {
-        input2 = input2.slice(0,-1);
+        input1 = textbox.value;
+        input1 = input1.slice(0,-1);
+        textbox.value = textbox.value.slice(0,-1);
     }
     else
     {
-        input1 = input1.slice(0,-1);
+        textbox.value = textbox.value.slice(0,-1);
+        if(input3!="")
+        {
+            input3 = input3.slice(0,-1);
+        }
+        else if(input2!="")
+        {
+            input2 = input2.slice(0,-1);
+        }
+        else
+        {
+            input1 = input1.slice(0,-1);
+        }
     }
 }
 
