@@ -6,49 +6,45 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class = "header">
-            <h1>Calculator</h1>
-        </div>
-        <div class="calculator">
-            <div class="screen">
-                <input type="text" name="textbox" id="textbox" style="height: 50px;font-size: 30px;text-align: end;width: 806px; border-radius: 8px;">
-            </div>
-            <br>
-            <div class="row">
-                <button onclick="clear1()" style="width: 404px; color: aliceblue;background-color: black;">AC</button>
-                <button onclick="operators('%')" style="background-color: burlywood;">%</button>
-                <button onclick="delete1()" style="background-color: red;color: aliceblue;">Del</button>
-            </div>
-            <br>
-            <div class="row1">
-                <button onclick="values(7)">7</button>
-                <button onclick="values(8)">8</button>
-                <button onclick="values(9)">9</button>
-                <button onclick="operators('/')" style="background-color: burlywood;">÷</button>
-            </div>
-            <br>
-            <div class="row2">
-                <button onclick="values(4)">4</button>
-                <button onclick="values(5)">5</button>
-                <button onclick="values(6)">6</button>
-                <button onclick="operators('*')" style="background-color: burlywood;">x</button>
-            </div>
-            <br>
-            <div class="row2">
-                <button onclick="values(1)">1</button>
-                <button onclick="values(2)">2</button>
-                <button onclick="values(3)">3</button>
-                <button onclick="operators('-')" style="background-color: burlywood;">-</button>
-            </div>
-            <br>
-            <div class="row3">
-                <button onclick="values(0)">0</button>
-                <button onclick="values('.')">.</button>
-                <button onclick="operate()" style="background-color: burlywood;">=</button>
-                <button onclick="operators('+')" style="background-color: burlywood;">+</button>
-            </div>
-            <div class="footer" style="position: fixed; bottom: 0; width: 100%;">
-                Copyright © Krish Maniyar
+        <div class="main">
+            <div class="calculator">
+                <div class="screen">
+                    <input type="text" name="textbox" id="textbox">
+                </div>
+                <br>
+                <div class="row">
+                    <button onclick="clear1()" id="lightGrey">AC</button>
+                    <button onclick="delete1()" id="lightGrey">Del</button>
+                    <button onclick="operators('%')" id="lightGrey">%</button>
+                    <button onclick="operators('/')" id="orange">÷</button>
+                </div>
+                <br>
+                <div class="row1">
+                    <button onclick="values(7)">7</button>
+                    <button onclick="values(8)">8</button>
+                    <button onclick="values(9)">9</button>
+                    <button onclick="operators('*')" id="orange">x</button>
+                </div>
+                <br>
+                <div class="row2">
+                    <button onclick="values(4)">4</button>
+                    <button onclick="values(5)">5</button>
+                    <button onclick="values(6)">6</button>
+                    <button onclick="operators('-')" id="orange">-</button>
+                </div>
+                <br>
+                <div class="row2">
+                    <button onclick="values(1)">1</button>
+                    <button onclick="values(2)">2</button>
+                    <button onclick="values(3)">3</button>
+                    <button onclick="operators('+')" id="orange">+</button>
+                </div>
+                <br>
+                <div class="row3">
+                    <button onclick="values(0)" style="width: 130px;border-radius: 50px;">0</button>
+                    <button onclick="values('.')">.</button>
+                    <button onclick="operate()" id="orange">=</button>
+                </div>
             </div>
         </div>
         <script src="javascript.js"></script>
